@@ -16,7 +16,6 @@ var fitness = new FuncFitness((c) =>
 
     double score = 0;
 
-
     for (int i = 0; i < fc!.GetGenes().Length; i++)
     {
         if ((char)fc.GetGenes()[i].Value == target[i])

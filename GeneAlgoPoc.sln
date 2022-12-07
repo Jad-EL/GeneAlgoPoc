@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneAlgoPoc", "GeneAlcoPoc\GeneAlgoPoc.csproj", "{71EE6664-D435-471D-A0A4-150FEC9EC007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticSharpPoc", "GeneticSharp\GeneticSharpPoc.csproj", "{193AD88E-337F-4D05-B795-D218BDC57B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneticSharpPoc", "GeneticSharp\GeneticSharpPoc.csproj", "{193AD88E-337F-4D05-B795-D218BDC57B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticSharpPocInt", "GeneticSharpPocInt\GeneticSharpPocInt.csproj", "{07B60E88-93C4-4B16-B98E-BAF2B8B383B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{193AD88E-337F-4D05-B795-D218BDC57B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193AD88E-337F-4D05-B795-D218BDC57B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193AD88E-337F-4D05-B795-D218BDC57B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B60E88-93C4-4B16-B98E-BAF2B8B383B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B60E88-93C4-4B16-B98E-BAF2B8B383B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B60E88-93C4-4B16-B98E-BAF2B8B383B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B60E88-93C4-4B16-B98E-BAF2B8B383B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

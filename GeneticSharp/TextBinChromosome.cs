@@ -1,6 +1,5 @@
 ﻿using GeneticSharp;
 using System.Collections;
-using System.Linq;
 using System.Text;
 
 namespace GeneticSharpPoc;
