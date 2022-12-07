@@ -11,11 +11,7 @@ public class TextChromosome : ChromosomeBase
     {
         _stringLength = targetTextLength;
         _validChars=validChars;
-
-        for (int i = 0; i < targetTextLength; i++)
-        {
-            ReplaceGene(i, GenerateGene(i));
-        }
+        CreateGenes();
     }
 
     public override IChromosome CreateNew()

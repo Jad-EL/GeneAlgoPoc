@@ -2,20 +2,20 @@
 using GeneticSharp;
 using GeneticSharpPoc;
 
-Console.WriteLine("Hello, World!");
 
 string validGenes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890, .-;:_!\"#%&/()=?@${[]}";
-string target = "This is a test";
+string target = "Hey this is a fcking test (hello world)";
 
 var chromosome = new TextChromosome(target.Length, validGenes);
 
-var population = new Population(50, 100, chromosome);
+var population = new Population(100, 100, chromosome);
 
 var fitness = new FuncFitness((c) =>
 {
     var fc = c as TextChromosome;
 
     double score = 0;
+
 
     for (int i = 0; i < fc!.GetGenes().Length; i++)
     {
@@ -36,11 +36,13 @@ var fitness = new FuncFitness((c) =>
 var ga = new GeneticAlgorithm(
     population,
     fitness,
-    new RouletteWheelSelection(),
+    new EliteSelection(),
     new UniformCrossover(),
-    new InsertionMutation());
+    new UniformMutation(true))
+{
+    Termination = new FitnessThresholdTermination(1)
+};
 
-ga.Termination = new FitnessThresholdTermination(0.9);
 double latestFitness = 0.0;
 
 ga.GenerationRan += (object? sender, EventArgs e) =>
@@ -54,6 +56,7 @@ ga.GenerationRan += (object? sender, EventArgs e) =>
         Console.WriteLine($"Generation {ga.GenerationsNumber} ==== {bestChromosome} ==== FIT : {bestFitness}");
     }
 };
+
 
 
 
